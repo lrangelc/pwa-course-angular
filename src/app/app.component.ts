@@ -22,11 +22,10 @@ export class AppComponent implements OnInit {
     private swUpdate: SwUpdate,
     private messaging: AngularFireMessaging,
     private database: AngularFirestore
-  ) {
-    this.tokensCollections = this.database.collection<Token>('tokens');
-  }
+  ) {}
 
   ngOnInit() {
+    this.tokensCollections = this.database.collection<Token>('tokens');
     this.updatePWA();
     this.requestPermission();
     this.listenNotifications();
@@ -41,6 +40,7 @@ export class AppComponent implements OnInit {
 
   requestPermission() {
     this.messaging.requestToken.subscribe((token) => {
+      console.log('token');
       console.log(token);
       this.tokensCollections.add({ token });
     });
@@ -48,6 +48,7 @@ export class AppComponent implements OnInit {
 
   listenNotifications() {
     this.messaging.messages.subscribe((message) => {
+      console.log('message');
       console.log(message);
     });
   }
