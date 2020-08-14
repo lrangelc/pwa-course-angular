@@ -18,7 +18,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { environment } from './../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,7 @@ import { environment } from '../environments/environment';
     CoreModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireMessagingModule,
