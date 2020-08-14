@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
 
   updatePWA() {
     this.swUpdate.available.subscribe((value) => {
-      console.log('update:', value);
+      console.log('update PWA:', value);
       window.location.reload();
     });
   }
