@@ -1,5 +1,14 @@
 {
+  "targets": {
+    "blogeekplatzilarc": {
+      "hosting": {
+        "platzi-store": [
+          "blogeekplatzilarc"
+        ]
+      }
+    }
+  },
   "projects": {
-    "default": "angular-pwa-platzi"
+    "default": "blogeekplatzilarc"
   }
 }

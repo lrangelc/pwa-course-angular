@@ -32,7 +32,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     CoreModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireMessagingModule,
