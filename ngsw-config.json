@@ -14,7 +14,8 @@
           "/*.js"
         ]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -34,7 +35,7 @@
         "maxSize": 3,
         "maxAge": "5m",
         "strategy": "freshness",
-        "timeout": "2s"
+        "timeout": "3s"
       }
     }
   ]
